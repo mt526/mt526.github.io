@@ -81,7 +81,7 @@ class Cursor {
     // 需要重新获取列表时，使用 CURSOR.refresh()
 })();
 
-//首次访问弹窗
+//首次访问弹窗 !!如果启用，公告栏欢迎就没了！！！
 /* if (localStorage.getItem("popWelcomeWindow") != "0") {
     if(document.referrer==undefined||document.referrer.indexOf("yisous.xyz")!=-1||document.referrer.indexOf("ariasaka.top")!=-1){ //改成自己域名，注意是referrer!!! qwq
         Snackbar.show({
