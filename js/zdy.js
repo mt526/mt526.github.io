@@ -82,7 +82,7 @@ class Cursor {
 })();
 
 //首次访问弹窗
-if (localStorage.getItem("popWelcomeWindow") != "0") {
+/* if (localStorage.getItem("popWelcomeWindow") != "0") {
     if(document.referrer==undefined||document.referrer.indexOf("yisous.xyz")!=-1||document.referrer.indexOf("ariasaka.top")!=-1){ //改成自己域名，注意是referrer!!! qwq
         Snackbar.show({
             pos: "top-right",
@@ -112,7 +112,7 @@ if (sessionStorage.getItem("popCookieWindow") != "0") {
 }
 //不在弹出Cookie提醒
 sessionStorage.setItem("popCookieWindow", "0");
-
+*/
 //自带上文浏览器提示
 
 function browserTC() {
@@ -172,7 +172,7 @@ if(getCookie('browsertc')!=1){
         browsertc: 1,
     }, 1);
     browserVersion();
-}
+} 
 
 //fps
 
@@ -436,9 +436,8 @@ $.ajax({
         
             document.getElementsByClassName("announcement_content")[0].innerHTML =
                 `欢迎来自<span>${pos}</span>的小伙伴，${timeChange}<br>
-        你距离本作者约有<span>${dist}</span>公里。<br>${posdesc}
+        你距离本作者约有<span>${dist}</span>公里，${posdesc}
         <br>
-        
         `;
         }
         showWelcome()
