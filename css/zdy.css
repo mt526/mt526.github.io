@@ -132,3 +132,14 @@
 :root{
     --lyx-theme:#ed709b /*我的主题色*/
 }
+
+/*字体
+@font-face{
+    font-family: 'jiangxizhuokai';
+    font-display: auto;
+    src: url('css/jiangxizhuokai.ttf') format("truetype");
+}
+
+body {
+    font-family: 'jiangxizhuokai';
+}*/

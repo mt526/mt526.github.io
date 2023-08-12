@@ -3,6 +3,9 @@ m=d.getMonth()+1;
 dd=d.getDate();
 y=d.getFullYear();
 
+/*import swal from 'sweetalert2.js';
+window.Swal = swal;*/
+
 //cookie函数
 
 
@@ -125,6 +128,22 @@ if(m==7&&dd==1){//建党节
     console.log("中国共产党"+(y-1921).toString()+"岁生日快乐");
     if(sessionStorage.getItem("isPopupWindow")!="1"){
         Swal.fire("中国共产党"+(y-1921).toString()+"岁生日快乐");
+        sessionStorage.setItem("isPopupWindow","1");
+    }
+}
+
+//整活部分
+if(m==8&&dd==12){//ser b生日
+    console.log("祝 ser b "+(y-2008).toString()+"岁生日快乐");
+    if(sessionStorage.getItem("isPopupWindow")!="1"){
+        Swal.fire("祝 ser b "+(y-2008).toString()+"岁生日快乐");
+        sessionStorage.setItem("isPopupWindow","1");
+    }
+}
+if(m==5&&dd==26){//馒头纪念日
+    console.log("庆祝第"+(y-2019).toString()+"届馒头纪念日");
+    if(sessionStorage.getItem("isPopupWindow")!="1"){
+        Swal.fire("庆祝第"+(y-2008).toString()+"届馒头纪念日");
         sessionStorage.setItem("isPopupWindow","1");
     }
 }
