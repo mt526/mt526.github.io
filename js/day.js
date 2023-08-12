@@ -132,21 +132,6 @@ if(m==7&&dd==1){//建党节
     }
 }
 
-//整活部分
-if(m==8&&dd==12){//ser b生日
-    console.log("祝 ser b "+(y-2008).toString()+"岁生日快乐");
-    if(sessionStorage.getItem("isPopupWindow")!="1"){
-        Swal.fire("祝 ser b "+(y-2008).toString()+"岁生日快乐");
-        sessionStorage.setItem("isPopupWindow","1");
-    }
-}
-if(m==5&&dd==26){//馒头纪念日
-    console.log("庆祝第"+(y-2019).toString()+"届馒头纪念日");
-    if(sessionStorage.getItem("isPopupWindow")!="1"){
-        Swal.fire("庆祝第"+(y-2008).toString()+"届馒头纪念日");
-        sessionStorage.setItem("isPopupWindow","1");
-    }
-}
 
 //传统节日部分
 
@@ -215,6 +200,23 @@ if((lunar["IMonthCn"]=="九月"&&lunar["IDayCn"]=="初九")){
     console.log("重阳节快乐！");
     if(sessionStorage.getItem("isPopupWindow")!="1"){
         Swal.fire("重阳节快乐！");
+        sessionStorage.setItem("isPopupWindow","1");
+    }
+}
+
+//整活部分
+if((lunar["IMonthCn"]=="六月"&&lunar["IDayCn"]=="廿六")){
+    //ser b 生日 阴历
+    console.log("ser b 生日快乐");
+    if(sessionStorage.getItem("isPopupWindow")!="1"){
+        Swal.fire("祝 ser b "+(y-2008).toString()+"岁生日快乐！");
+        sessionStorage.setItem("isPopupWindow","1");
+    }
+}
+if(m==5&&dd==26){//馒头纪念日
+    console.log("庆祝第"+(y-2019).toString()+"届馒头纪念日");
+    if(sessionStorage.getItem("isPopupWindow")!="1"){
+        Swal.fire("庆祝第"+(y-2019).toString()+"届馒头纪念日");
         sessionStorage.setItem("isPopupWindow","1");
     }
 }
