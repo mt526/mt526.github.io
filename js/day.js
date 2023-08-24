@@ -56,6 +56,23 @@ if(m==8&&dd==14){
         sessionStorage.setItem("isPopupWindow","1");
     }
 }
+if(m==9&&dd==3){
+    console.log("今天是抗战胜利"+(y-1945).toString()+"周年纪念日!\n=================================================================")
+    if(sessionStorage.getItem("isPopupWindow")!="1"){
+        Swal.fire("今天是抗战胜利"+(y-1945).toString()+"周年纪念日!");
+        sessionStorage.setItem("isPopupWindow","1");
+    }
+}
+
+//重大事件
+
+if(m==8&&dd==24){
+    console.log("今天是8月24日\n=================================================================")
+    if(sessionStorage.getItem("isPopupWindow")!="1"){
+        Swal.fire("2023年8月24日，日本将核污染水排海\n历史将永远记住这一天！\n");
+        sessionStorage.setItem("isPopupWindow","1");
+    }
+}
 
 //节假日
 
@@ -66,17 +83,18 @@ if(m==10&&dd<=5){//国庆节
         sessionStorage.setItem("isPopupWindow","1");
     }
 }
-if(m==8&&dd==15){//搞来玩的，鬼子投降
-    console.log("鬼子投降"+(y-1945).toString()+"年了！");
-    if(sessionStorage.getItem("isPopupWindow")!="1"){
-        Swal.fire("鬼子投降"+(y-1945).toString()+"年了！");
-        sessionStorage.setItem("isPopupWindow","1");
-    }
-}
+
 if(m==1&&dd==1){//元旦节
     console.log(y.toString()+"年元旦快乐！");
     if(sessionStorage.getItem("isPopupWindow")!="1"){
         Swal.fire(y.toString()+"年元旦快乐！");
+        sessionStorage.setItem("isPopupWindow","1");
+    }
+}
+if(m==1&&dd==10){//中国人民警察节
+    console.log("今天是"+y.toString()+"年的中国人民警察节");
+    if(sessionStorage.getItem("isPopupWindow")!="1"){
+        Swal.fire("今天是"+y.toString()+"年的中国人民警察节\n");
         sessionStorage.setItem("isPopupWindow","1");
     }
 }
@@ -96,10 +114,10 @@ if(m==4&&dd==1){//愚人节，随机谎话
         sessionStorage.setItem("isPopupWindow","1");
     }
 }
-if(m==5&&dd==1){//劳动节
-    console.log("劳动节快乐！为助力各行各业发展辛勤工作的人们致敬！");
+if(m==2&&dd==4){//情人节
+    console.log("情人节快乐！");
     if(sessionStorage.getItem("isPopupWindow")!="1"){
-        Swal.fire("劳动节快乐！为助力各行各业发展辛勤工作的人们致敬！");
+        Swal.fire("情人节快乐！");
         sessionStorage.setItem("isPopupWindow","1");
     }
 }
@@ -131,6 +149,35 @@ if(m==7&&dd==1){//建党节
         sessionStorage.setItem("isPopupWindow","1");
     }
 }
+if(m==3&&dd==15){//消费者权益日
+    console.log("");
+    if(sessionStorage.getItem("isPopupWindow")!="1"){
+        Swal.fire("今天是3.15消费者权益日");
+        sessionStorage.setItem("isPopupWindow","1");
+    }
+}
+if(m==3&&dd==12){//植树节
+    console.log("");
+    if(sessionStorage.getItem("isPopupWindow")!="1"){
+        Swal.fire("今天是3.12植树节");
+        sessionStorage.setItem("isPopupWindow","1");
+    }
+}
+if(m==4&&dd==22){//世界地球日
+    console.log("");
+    if(sessionStorage.getItem("isPopupWindow")!="1"){
+        Swal.fire("今天是世界地球日\n只有一个地球！");
+        sessionStorage.setItem("isPopupWindow","1");
+    }
+}
+if(m==4&&dd==23){//世界读书日
+    console.log("");
+    if(sessionStorage.getItem("isPopupWindow")!="1"){
+        Swal.fire("今天是世界读书日");
+        sessionStorage.setItem("isPopupWindow","1");
+    }
+}
+
 
 
 //传统节日部分
@@ -173,9 +220,9 @@ if((lunar["IMonthCn"]=="正月"&&lunar["IDayCn"]=="十五")){
 }
 if((lunar["IMonthCn"]=="五月"&&lunar["IDayCn"]=="初五")){
     //端午节
-    console.log("端午节快乐！");
+    console.log("端午安康！");
     if(sessionStorage.getItem("isPopupWindow")!="1"){
-        Swal.fire("端午节快乐！");
+        Swal.fire("端午安康！");
         sessionStorage.setItem("isPopupWindow","1");
     }
 }
@@ -199,12 +246,26 @@ if((lunar["IMonthCn"]=="九月"&&lunar["IDayCn"]=="初九")){
     //重阳节
     console.log("重阳节快乐！");
     if(sessionStorage.getItem("isPopupWindow")!="1"){
-        Swal.fire("重阳节快乐！");
+        Swal.fire("赏菊登高，乐享重阳！");
         sessionStorage.setItem("isPopupWindow","1");
     }
 }
-
+if((lunar["IMonthCn"]=="腊月"&&lunar["IDayCn"]=="初八")){
+    //腊八节
+    console.log("腊八节！");
+    if(sessionStorage.getItem("isPopupWindow")!="1"){
+        Swal.fire("小孩小孩你别馋，过了腊八就是年");
+        sessionStorage.setItem("isPopupWindow","1");
+    }
+}
 //整活部分
+if(m==8&&dd==15){//搞来玩的，鬼子投降
+    console.log("鬼子投降"+(y-1945).toString()+"年了！");
+    if(sessionStorage.getItem("isPopupWindow")!="1"){
+        Swal.fire("鬼子投降"+(y-1945).toString()+"年了！");
+        sessionStorage.setItem("isPopupWindow","1");
+    }
+}
 if((lunar["IMonthCn"]=="六月"&&lunar["IDayCn"]=="廿六")){
     //ser b 生日 阴历
     console.log("ser b 生日快乐");
