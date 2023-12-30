@@ -82,8 +82,8 @@ class Cursor {
 })();
 
 //首次访问弹窗 !!如果启用，公告栏欢迎就没了！！！
-/* if (localStorage.getItem("popWelcomeWindow") != "0") {
-    if(document.referrer==undefined||document.referrer.indexOf("yisous.xyz")!=-1||document.referrer.indexOf("ariasaka.top")!=-1){ //改成自己域名，注意是referrer!!! qwq
+ /*if (localStorage.getItem("popWelcomeWindow") != "0") {
+    if(document.referrer==undefined||document.referrer.indexOf("mt526.github.io")!=-1){ //改成自己域名，注意是referrer!!! qwq
         Snackbar.show({
             pos: "top-right",
             showAction: false,
@@ -103,7 +103,7 @@ if (sessionStorage.getItem("popCookieWindow") != "0") {
         Snackbar.show({
             text: '本站使用Cookie和本地/会话存储保证浏览体验和网站统计',
             pos: 'bottom-right',
-            actionText: "查看博客声明",
+            //actionText: "查看博客声明",*
             onActionClick: function (element) {
                 window.open("/license")
             },
