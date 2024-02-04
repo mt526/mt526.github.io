@@ -63,7 +63,13 @@ if(m==9&&dd==3){
         sessionStorage.setItem("isPopupWindow","1");
     }
 }
-
+if(m==1&&dd==12){
+    console.log("今天是本站成立"+(y-2023).toString()+"周年纪念日!\n=================================================================")
+    if(sessionStorage.getItem("isPopupWindow")!="1"){
+        Swal.fire("今天是本站成立"+(y-2023).toString()+"周年纪念日!");
+        sessionStorage.setItem("isPopupWindow","1");
+    }
+}
 //重大事件
 
 if(m==8&&dd==24){
