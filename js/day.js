@@ -114,7 +114,7 @@ if(m==4&&dd==1){//愚人节，随机谎话
         sessionStorage.setItem("isPopupWindow","1");
     }
 }
-if(m==2&&dd==4){//情人节
+if(m==2&&dd==14){//情人节
     console.log("情人节快乐！");
     if(sessionStorage.getItem("isPopupWindow")!="1"){
         Swal.fire("情人节快乐！");
