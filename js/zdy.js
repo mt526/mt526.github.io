@@ -216,10 +216,13 @@ var loop = function () {
             var kd=`<span style="color:orange">卡</span>`
         }
         else if(fps<=40){
-            var kd=`<span style="color:green">...</span>`
+            var kd=`<span style="color:green">正常</span>`
         }
-        else{
-            var kd=`<span style="color:#425aef">正常</span>`
+        else if(fps<=90){
+            var kd=`<span style="color:#425aef">流畅</span>`
+        }
+        else {
+            var kd=`<span style="color:#4dffb2">丝滑</span>`
         }
         document.getElementById("fps").innerHTML=`FPS:${fps} ${kd}`;
         frame = 0;

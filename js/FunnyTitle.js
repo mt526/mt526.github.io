@@ -8,9 +8,9 @@ document.addEventListener('visibilitychange', function () {
     }
     else {
         $('[rel="icon"]').attr('href', "https://i.loli.net/2020/12/20/BZhvzONd8lgoFAI.png");
-        document.title = '（*＾ワ＾*）被你发现啦' + OriginTitle;
+        document.title = '（*＾ワ＾*）被你发现啦 ' + OriginTitle;
         titleTime = setTimeout(function () {
             document.title = OriginTitle;
-        }, 2000);
+        }, 1000);
     }
 });
