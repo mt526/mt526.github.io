@@ -436,15 +436,33 @@ $.ajax({
             else if (date.getHours() >= 16 && date.getHours() < 19) timeChange = "<span>夕阳无限好！</span>";
             else if (date.getHours() >= 19 && date.getHours() < 24) timeChange = "<span>晚上好</span>，夜生活嗨起来！";
             else timeChange = "夜深了，早点休息，少熬夜";
-        
+
+            //自己加的
+            var Date3 = new Date();
+            var year = Date3.getFullYear();
+            var month = Date3.getMonth() + 1;
+            var date2 = Date3.getDate();
+            var dateArr = ["Sun","Mon",'Tues','Wednes','Thurs','Fri','Satur'];
+            //var day= Date3.getDay();
+            var hours = Date3.getHours();
+            let day;
+            if (Date3.getDay()==1) day="一";
+            else if (Date3.getDay()==2) day="二";
+            else if (Date3.getDay()==3) day="三";
+            else if (Date3.getDay()==4) day="四";
+            else if (Date3.getDay()==5) day="五";
+            else if (Date3.getDay()==6) day="六";
+            else if (Date3.getDay()==7) day="日";
+
             document.getElementsByClassName("announcement_content")[0].innerHTML =
-                `欢迎来自<span>${pos}</span>的小伙伴，${timeChange}<br>
+                `现在是<span>${year}</span>年<span>${month}</span>月<span>${date2}</span>日 星期<span>${day}</span><br>欢迎来自<span color="#F42BF7">${pos}</span>的小伙伴，${timeChange}<br>
         你距离本作者约有<span>${dist}</span>公里。<br>${posdesc}
         <br>
         `;
         }
         showWelcome()
     }
+    
 })
     function switchPostChart () {
     let color = document.documentElement.getAttribute('data-theme') === 'light' ? '#4C4948' : 'rgba(255,255,255,0.7)'
