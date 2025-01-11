@@ -4,19 +4,6 @@
   
     
     <entry>
-      <title>免费不限速网盘</title>
-      <link href="/2024/06/09/alist/"/>
-      <url>/2024/06/09/alist/</url>
-      
-        <content type="html"><![CDATA[<h1 id="免费不限速网盘"><a href="#免费不限速网盘" class="headerlink" title="免费不限速网盘"></a>免费不限速网盘</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>其实这个项目我早就想做了，近期看到Serv00提供了免费的服务器，就顺手做了一个。</p><p><strong>不要滥用此服务！</strong></p><h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><h3 id="框架"><a href="#框架" class="headerlink" title="框架"></a>框架</h3><p>本站由<a href="https://github.com/Xhofe/alist">Alist</a>强力驱动。Alist想必大家都很熟悉了吧，不再过多介绍。<br><del>（实在不知道的可以去链接里看介绍，绝对不是我偷懒）</del></p><h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><h3 id="登录"><a href="#登录" class="headerlink" title="登录"></a>登录</h3><p>非常简单，打开<a href="https://mt526.serv00.net/">网站</a>就会进入首页，默认以<code>访客</code>用户登录。该用户只能看<code>使用须知</code>。<br><img src="/images/7/1.webp" alt="首页"><br><img src="/images/7/2.webp" alt="使用须知">  </p><p>如果你有账号，请直接登录。<br>如果没有账号，请联系我注册。</p><p>登录正常账号后，注意到右下角有三个点点，点击它就能展开更多操作。<br><img src="/images/7/3.webp" alt="按钮"></p><h3 id="上传下载"><a href="#上传下载" class="headerlink" title="上传下载"></a>上传下载</h3><p>无论上传文件还是下载文件都是很快的。<br>尤其是下载文件，OneDrive轻松把我百兆宽带拉满。<br><img src="/images/7/4.webp" alt="下载"></p><p>至于上传的话，虽然Serv00服务器的带宽还是挺高的，但是文件需要经过服务器中转后才上传到OneDrive，需要消耗两倍的时间。不过也很快了。<br><img src="/images/7/5.webp" alt="上传"></p><h3 id="在线预览"><a href="#在线预览" class="headerlink" title="在线预览"></a>在线预览</h3><p>支持常见文件格式的在线预览。<br>例如，可以在线播放视频<br><img src="/images/7/6.webp" alt="播放视频"></p><h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p>除此之外，还有许多功能等待你去发现！</p><h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>感谢<a href="https://www.serv00.com/">Serv00</a>提供免费服务器<br>感谢其他人的支持</p><p><strong>本网盘仅用于个人开发研究学习用途，严禁滥用！</strong></p><p>不用于一切商业用途</p><p>免费服务，且用且珍惜</p><p><strong>Friendship is MAGIC</strong></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>超详细的装系统教程</title>
       <link href="/2023/03/17/zhuangxitongjc/"/>
       <url>/2023/03/17/zhuangxitongjc/</url>
