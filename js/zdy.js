@@ -452,7 +452,8 @@ $.ajax({
             else if (Date3.getDay()==4) day="四";
             else if (Date3.getDay()==5) day="五";
             else if (Date3.getDay()==6) day="六";
-            else if (Date3.getDay()==7) day="日";
+            else if (Date3.getDay()==0) day="日";
+            console.log(Date3.getDay())
 
             document.getElementsByClassName("announcement_content")[0].innerHTML =
                 `现在是<span>${year}</span>年<span>${month}</span>月<span>${date2}</span>日 星期<span>${day}</span><br>欢迎来自<span color="#F42BF7">${pos}</span>的小伙伴，${timeChange}<br>
