@@ -133,16 +133,13 @@
     --lyx-theme:#ed709b /*我的主题色*/
 }
 
-/*字体
-@font-face{
-    font-family: 'jiangxizhuokai';
-    font-display: auto;
-    src: url('css/jiangxizhuokai.ttf') format("truetype");
+/*字体*/
+@font-face {
+  /*字体名称，名字可以随便起，但是注意要一致，建议英文*/
+  font-family: 'zdyfont';
+  font-display: swap;
+  src: url('https://npm.elemecdn.com/fontcdn-ariasaka@1.0.0/HYTangMeiRen55W.woff2') format("truetype");
 }
-
-body {
-    font-family: 'jiangxizhuokai';
-}*/
 
 
 
