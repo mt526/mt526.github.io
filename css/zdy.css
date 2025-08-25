@@ -245,3 +245,146 @@ h6::before {
   -webkit-animation: ccc 6s linear infinite;
   animation: ccc 6s linear infinite;
 }
+
+/*文章的整体背景，渐变色设置*/
+@keyframes gradientBG {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+#web_bg {
+  background: linear-gradient(-45deg, #ee76521e, #e73c7e1f, #23a5d51d, #23d5ab18);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+:root {
+	--trans-light: rgba(255, 255, 255, 0.5);
+	--trans-dark: rgba(25, 25, 25, 0.88);
+	--border-style: 1px solid rgb(169, 169, 169);
+	--backdrop-filter: blur(5px) saturate(150%);
+  }
+  
+  /* 首页文章卡片 */
+  #recent-posts > .recent-post-item {
+	background: var(--trans-light);
+	border-radius: 25px;
+	border: var(--border-style);
+  }
+  
+  /* 首页侧栏卡片 */
+  #aside-content .card-widget {
+	background: var(--trans-light);
+	border-radius: 18px;
+	border: var(--border-style);
+  }
+  
+  /* 文章页、归档页、普通页面 */
+  div#post,
+  div#page,
+  div#archive {
+	background: var(--trans-light);
+	border: var(--border-style);
+	border-radius: 20px;
+	--border-style: 2px solid rgb(242 246 209);
+  }
+
+  
+  /* 导航栏 */
+  #page-header.nav-fixed #nav {
+	background: rgba(255, 255, 255, 0.7);
+  }
+  
+  [data-theme="dark"] #page-header.nav-fixed #nav {
+	background: rgba(0, 0, 0, 0.7) !important;
+  }
+  
+  /* 夜间模式遮罩 */
+  [data-theme="dark"] #recent-posts > .recent-post-item,
+  [data-theme="dark"] #aside-content .card-widget,
+  [data-theme="dark"] div#post,
+  [data-theme="dark"] div#archive,
+  [data-theme="dark"] div#page {
+	background: var(--trans-dark);
+  }
+  
+  
+  /* 夜间模式页脚页头遮罩透明 */
+  [data-theme="dark"] #footer::before {
+	background: transparent !important;
+  }
+  [data-theme="dark"] #page-header::before {
+	background: transparent !important;
+  }
+  
+  /* 阅读模式 */
+  .read-mode #aside-content .card-widget {
+	background: rgba(118, 238, 152, 0.5) !important;
+  }
+  .read-mode div#post {
+	background: rgba(114, 227, 146, 0.5) !important;
+  }
+  
+  /* 夜间模式下的阅读模式 */
+  [data-theme="dark"] .read-mode #aside-content .card-widget {
+	background: rgba(25, 25, 25, 0.9) !important;
+	color: #ffffff;
+  }
+  [data-theme="dark"] .read-mode div#post {
+	background: rgba(25, 25, 25, 0.9) !important;
+	color: #ffffff;
+  }
+
+  /* 页脚 */
+
+  .footer {
+    text-align: center;
+    position: relative;
+  }
+  .footer p {
+    margin: 0.5rem 0;
+    color: #66ccff;
+    line-height: 1;
+  }
+  .copyright {
+    font-size: 1.1rem; 
+    color: #66ccff;
+    font-weight: 400;
+  }
+  #footer-wrap .framework-info {
+    color: #66ccff !important;
+  }
+
+#footer-wrap .framework-info a {
+    color: #66ccff !important;
+    text-decoration: none;
+    transition: opacity 0.3s;
+  }
+
+#footer-wrap .framework-info a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+  }
+
+
+  /* 背景宇宙星光  */
+#universe{
+  display: block;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
