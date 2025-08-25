@@ -140,6 +140,12 @@
   font-display: swap;
   src: url('https://npm.elemecdn.com/fontcdn-ariasaka@1.0.0/HYTangMeiRen55W.woff2') format("truetype");
 }
+@font-face {
+  /*字体名称，名字可以随便起，但是注意要一致，建议英文*/
+  font-family: 'zdycodefont';
+  font-display: swap;
+  src: url('./JetBrainsMono-Medium.woff2') format("truetype");
+}
 
 
 
