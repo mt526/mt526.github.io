@@ -1,4 +1,4 @@
-// 来源于张苹果博客：https://zhangpingguo.com/
+// 来源于张苹果博客：https://zhangpingguo.com/,deepseek改编
 // 创建并添加元素
 function createDengContainer(customText) {
     const container = document.createElement('div');
@@ -172,7 +172,7 @@ function addStyles() {
             bottom: -6px; left: 8px; height: 10px; width: 58px; margin-left: 18px; 
         }
         .deng-t { 
-            font-family: '华文行楷', Arial, Lucida Grande, Tahoma, sans-serif; 
+            font-family: 'zdyfont'; 
             font-size: 2.8rem; 
             color: #dc8f03; 
             font-weight: 700; 
