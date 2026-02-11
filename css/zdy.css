@@ -1,3 +1,4 @@
+/* 小黑点跟随鼠标光标 */
 #cursor {
     position: fixed;
     width: 16px;
@@ -24,29 +25,20 @@
     opacity: 0.5;
     transform: scale(0.5);
 }
-/*背景模糊
-.page #page:not(.home #page){
-    background: transparent!important;
-    border: none!important;
-    box-shadow: none!important;
-    padding-top: 0;
-    backdrop-filter: none!important;
+/* 夜间模式：原生光标 → 荧光黄小圆点 */
+html[data-theme="dark"] * {
+  cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8' width='8px' height='8px'><circle cx='4' cy='4' r='4' fill='%23ffe570' opacity='0.8'/></svg>") 4 4, auto !important;
 }
-#page::before{
-    position: fixed;
-    z-index:-114;
-    bottom: 0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    content:'';
-    backdrop-filter: blur(10px);
-    background:var(--lyx-white-acrylic2);
+
+/* 夜间模式：自定义跟随圆点 → 荧光黄 + 光晕 */
+html[data-theme="dark"] #cursor {
+  background: #ffe066;        /* 荧光黄 */
+  opacity: 0.6;              /* 比白天略高，更醒目 */
+  box-shadow: 0 0 10px rgba(255, 229, 112, 0.7); /* 光晕，方便追踪 */
 }
-[data-theme="dark"] #page::before{
-    background-color: var(--lyx-black-acrylic2)!important;
-}
-*/
+
+
+
 
 /*fps*/
 
